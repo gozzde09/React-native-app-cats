@@ -49,7 +49,7 @@ export default function Board() {
             image: (
               <LottieView
                 style={styles.lottie}
-                source={require("../animations/confetti.json")}
+                source={require("../assets/animations/confetti.json")}
                 autoPlay
                 loop
                 ref={animation}
@@ -63,7 +63,7 @@ export default function Board() {
             image: (
               <LottieView
                 style={styles.lottie}
-                source={require("../animations/cat.json")}
+                source={require("../assets/animations/cat.json")}
                 autoPlay
                 loop
                 ref={animation}
@@ -79,7 +79,7 @@ export default function Board() {
             image: (
               <LottieView
                 style={styles.lottie}
-                source={require("../animations/cat-box.json")}
+                source={require("../assets/animations/cat-box.json")}
                 autoPlay
                 loop
                 ref={animation}
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 24,
     fontFamily: "PatrickHand-Regular",
-    marginBottom: 300,
+    marginBottom: 200,
   },
   title: {
     fontSize: 60,

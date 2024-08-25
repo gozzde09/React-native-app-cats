@@ -4,10 +4,10 @@
     "slug": "Catopia",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/cat.png",
+    "icon": "./assets/images/cat.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#ededed"
     },
@@ -16,12 +16,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/cat.png"
+      "favicon": "./assets/images/cat.png"
     },
     "plugins": [
       [
