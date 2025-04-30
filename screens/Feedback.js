@@ -17,7 +17,7 @@ import {
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-export default function UserFeedbackForm () {
+export default function UserFeedbackForm() {
   const [rating, setRating] = useState(0);
 
   const validationSchema = Yup.object().shape({
@@ -26,7 +26,7 @@ export default function UserFeedbackForm () {
       .email("Invalid email address, @ is required")
       .required("Email is required"),
     comment: Yup.string().required("Please leave a comment"),
-    rate: Yup.number().min(1, "Please rate the website"),
+    rate: Yup.number().min(1, "Please rate the app"),
   });
 
   const formik = useFormik({
@@ -135,7 +135,6 @@ export default function UserFeedbackForm () {
   );
 }
 const styles = StyleSheet.create({
-
   container: {
     flexGrow: 1,
     backgroundColor: "#f5f5f5",
@@ -145,7 +144,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     color: "#1C2B63",
     fontFamily: "PatrickHand-Regular",
-    marginTop:30
+    marginTop: 30,
   },
   input: {
     width: 350,

@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import Cards from "../components/Cards";
 
-export default function ExploreScreen() {
+export default function Explore() {
   const [allCats, setAllCats] = useState([]);
   const [filteredCats, setFilteredCats] = useState([]);
   const [selectedBreed, setSelectedBreed] = useState("");
@@ -25,9 +25,9 @@ export default function ExploreScreen() {
       .then((result) => {
         // console.log(result);
         // console.log(result.length); 67
-         const catsWithImages = result.filter((cat) => cat.reference_image_id);
-         setAllCats(catsWithImages);
-         setFilteredCats(catsWithImages);
+        const catsWithImages = result.filter((cat) => cat.reference_image_id);
+        setAllCats(catsWithImages);
+        setFilteredCats(catsWithImages);
         setIsLoading(false);
       });
   }, []);

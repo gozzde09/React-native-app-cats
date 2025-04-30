@@ -22,7 +22,7 @@ export default function AboutCat({ route }) {
 
   const navigation = useNavigation();
   const backExplore = () => {
-    navigation.navigate("Explore");
+    navigation.navigate("CATOPIA", { screen: "Explore" });
   };
 
   const [filteredCat, setFilteredCat] = useState(null);
